@@ -76,10 +76,10 @@ jobs:
            config_file="/home/shanlin/DeepRec_CI/acc_auc_benchmark/config.properties"
            cd /home/shanlin/
            if [[ ! -d DeepRec_CI ]];then
-              git clone https://github.com/GosTraight2020/DeepRec_CI.git
+              git clone git://github.com/GosTraight2020/DeepRec_CI.git
               while [[ $? != 0 ]]
               do
-                  git clone https://github.com/GosTraight2020/DeepRec_CI.git
+                  git clone git://github.com/GosTraight2020/DeepRec_CI.git
               done
            fi
            cd ./DeepRec_CI/ \
