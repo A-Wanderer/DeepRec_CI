@@ -71,6 +71,7 @@ function runSingleContainer()
     sudo docker run -itd \
     	--name $container_name\
         --rm\
+        --gpus all\
         $optional \
         -v $host_path:/benchmark_result/\
         $image_repo /bin/bash /benchmark_result/record/script/$currentTime/$script_name "${model_list[*]}"
